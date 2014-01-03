@@ -1,0 +1,4 @@
+develEnvironment
+================
+
+cheminformatics development container
