@@ -42,7 +42,7 @@ apt-get install -y libxml2 libxml2-dev
 printf "source(\"http://bioconductor.org/biocLite.R\")
 biocLite()
 biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklayer\", \"biomaRt\",
-\"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\"))
+\"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\", \"ChemmineOB\"))
 " | R --slave
 
 # compile and install openbabel
