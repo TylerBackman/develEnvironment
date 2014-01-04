@@ -59,5 +59,4 @@ biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklay
 " | R --slave
 
 # clean up
-R INSTALL --clean
 apt-get clean
