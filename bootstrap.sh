@@ -38,13 +38,6 @@ apt-get install -y curl libcurl4-openssl-dev
 apt-get install -y libgsl0-dev libgsl0ldbl
 apt-get install -y libxml2 libxml2-dev 
 
-# install R packages
-printf "source(\"http://bioconductor.org/biocLite.R\")
-biocLite()
-biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklayer\", \"biomaRt\",
-\"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\", \"ChemmineOB\"))
-" | R --slave
-
 # compile and install openbabel
 mkdir /tmp/compileOB
 cd /tmp/compileOB
@@ -57,6 +50,13 @@ make -j2
 make install
 cd ~/
 rm -rf /tmp/compileOB
+
+# install R packages
+printf "source(\"http://bioconductor.org/biocLite.R\")
+biocLite()
+biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklayer\", \"biomaRt\",
+\"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\", \"ChemmineOB\"))
+" | R --slave
 
 # clean up
 R INSTALL --clean
