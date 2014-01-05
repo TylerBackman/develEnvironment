@@ -10,6 +10,8 @@ apt-get install -y libx11-dev
 apt-get install -y xserver-xorg-dev 
 apt-get install -y xserver-xorg 
 apt-get install -y libxt-dev 
+apt-get install -y screen 
+apt-get install -y vim 
 # tools for compiling obabel
 apt-get install -y cmake 
 apt-get install -y libeigen3-dev zlib1g-dev libeigen2-dev libcairo2-dev python-dev
