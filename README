@@ -18,12 +18,14 @@ vagrant ssh
 # destroying container (commit code first!)
 vagrant destroy
 
-# reprovisioning
+# shut down cleanly
+vagrant halt
+
+# reprovisioning (warning: might break stuff)
 vagrant up --provision
 
-# creating a vagrant box from the dist
-vagrant halt
-vagrant develEnvironment --base vm_name_from_virtualbox
+# creating a vagrant box from the dist (execute while vagrant is up)
+vagrant package --output=develEnvironment.box
 
 # getting started with Screen/Vim/R/VimR IDE
 Launch Screen
