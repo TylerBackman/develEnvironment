@@ -60,5 +60,18 @@ biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklay
 \"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\", \"ChemmineOB\"))
 " | R --slave
 
+# install vimr and configure for screen use
+cd /home/vagrant
+sudo -u vagrant wget http://www.vim.org/scripts/download_script.php?src_id=16100 -O screen.vba
+sudo -u vagrant vim -S screen.vba -c "q"
+rm screen.vba
+sudo -u vagrant wget http://www.vim.org/scripts/download_script.php?src_id=20996 -O vimr.zip
+sudo -u vagrant unzip vimr.zip -d .vim
+rm vimr.zip
+sudo -u vagrant vim -c ":helptags .vim/doc" -c "q"
+sudo -u vagrant wget http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/vim-r-plugin/.vimrc -O .vimrc
+sudo -u vagrant wget https://raw.github.com/jalvesaq/screenR/master/screenR.vim -O .vim/screenR.vim
+echo "let vimrplugin_source = \"~/.vim/screenR.vim\"" >> .vimrc
+
 # clean up
 apt-get clean

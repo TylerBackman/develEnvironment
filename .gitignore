@@ -1,2 +1,8 @@
 .vagrant/*
+*.Rhistory
+*.RData
+*.pyc
+*~
 *.swp
+*.DS_Store
+develEnvironment.box

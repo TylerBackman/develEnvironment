@@ -18,9 +18,31 @@ vagrant ssh
 # destroying container (commit code first!)
 vagrant destroy
 
-# reprovisioning
+# shut down cleanly
+vagrant halt
+
+# reprovisioning (warning: might break stuff)
 vagrant up --provision
 
-# creating a vagrant box from the dist
-vagrant halt
-vagrant develEnvironment --base vm_name_from_virtualbox
+# creating a vagrant box from the dist (execute while vagrant is up)
+vagrant package --output=develEnvironment.box
+
+# getting started with Screen/Vim/R/VimR IDE
+Launch Screen
+	screen
+Open VIM with a .R file
+	vim test.R
+Press F2 to launch R in a new screen window
+	F2
+In command mode press space bar to run lines, or whole blocks from vim visual mode.
+You can convert the split to a vertical split (for widescreen monitors)
+as follows.
+Close split
+	Ctrl+a X 
+Open verical split
+	Ctrl+a | 
+Switch input to right pane
+	Ctrl+a tab
+Switch right pane to screen 1
+	Ctrl+a 1
+
