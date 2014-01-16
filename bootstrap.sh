@@ -47,7 +47,7 @@ wget -O ob.tgz http://hivelocity.dl.sourceforge.net/project/openbabel/openbabel/
 tar xvfz ob.tgz
 mkdir build
 cd build
-cmake ../openbabel-2.3.2 -DPYTHON_BINDINGS=ON -DPYTHON_PREFIX=/usr/local/lib/python2.7/dist-packages/
+cmake ../openbabel-2.3.2 -DPYTHON_BINDINGS=ON
 make -j2
 make install
 cd ~/
