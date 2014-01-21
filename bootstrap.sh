@@ -52,6 +52,7 @@ make -j2
 make install
 cd ~/
 rm -rf /tmp/compileOB
+echo "/usr/local/lib" > /usr/lib/python2.7/dist-packages/obabel.pth
 
 # install R packages
 printf "source(\"http://bioconductor.org/biocLite.R\")
