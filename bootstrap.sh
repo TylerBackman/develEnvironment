@@ -11,6 +11,7 @@ apt-get install -y xserver-xorg-dev
 apt-get install -y xserver-xorg 
 apt-get install -y libxt-dev 
 apt-get install -y screen 
+apt-get install -y tmux 
 apt-get install -y vim 
 # tools for compiling obabel
 apt-get install -y cmake 
