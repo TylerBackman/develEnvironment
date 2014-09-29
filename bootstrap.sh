@@ -24,9 +24,9 @@ apt-get install -y hmmer
 # compile and install R
 mkdir /tmp/compileR
 cd /tmp/compileR
-wget http://cran.cnr.berkeley.edu/src/base/R-3/R-3.1.0.tar.gz
-tar xvfz R-3.1.0.tar.gz
-cd R-3.1.0
+wget http://cran.cnr.berkeley.edu/src/base/R-3/R-3.1.1.tar.gz
+tar xvfz R-3.1.1.tar.gz
+cd R-3.1.1
 ./configure
 make
 make check
