@@ -13,6 +13,7 @@ apt-get install -y libxt-dev
 apt-get install -y screen 
 apt-get install -y tmux 
 apt-get install -y vim 
+apt-get install -y texlive-latex-recommended 
 # tools for compiling obabel
 apt-get install -y cmake 
 apt-get install -y libeigen3-dev zlib1g-dev libeigen2-dev libcairo2-dev python-dev
