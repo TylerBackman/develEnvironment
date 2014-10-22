@@ -59,6 +59,7 @@ echo "/usr/local/lib" > /usr/lib/python2.7/dist-packages/obabel.pth
 printf "source(\"http://bioconductor.org/biocLite.R\")
 biocLite()
 biocLite(c(\"ShortRead\", \"Biostrings\", \"IRanges\", \"BSgenome\", \"rtracklayer\", \"biomaRt\",
+\"BiocStyle\", 
 \"ChemmineR\", \"fmcsR\", \"bioassayR\", \"cellHTS2\", \"RCurl\", \"ape\", \"eiR\", \"ChemmineOB\", \"rjson\"))
 " | R --slave
 
