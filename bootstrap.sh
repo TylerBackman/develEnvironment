@@ -16,6 +16,8 @@ apt-get install -y vim
 apt-get install -y texlive-latex-recommended 
 apt-get install -y texlive-latex-extra
 apt-get install -y lynx
+apt-get install -y cm-super
+apt-get install -y texlive-fonts-recommended 
 
 # tools for compiling obabel
 apt-get install -y cmake 
