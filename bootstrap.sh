@@ -18,6 +18,7 @@ apt-get install -y texlive-latex-extra
 apt-get install -y lynx
 apt-get install -y cm-super
 apt-get install -y texlive-fonts-recommended 
+apt-get install -y xpdf 
 
 # tools for compiling obabel
 apt-get install -y cmake 
