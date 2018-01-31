@@ -51,7 +51,7 @@ apt-get install -y libxml2 libxml2-dev
 # compile and install openbabel
 mkdir /tmp/compileOB
 cd /tmp/compileOB
-wget -O ob.tgz http://hivelocity.dl.sourceforge.net/project/openbabel/openbabel/2.3.2/openbabel-2.3.2.tar.gz
+wget -O ob.tgz https://svwh.dl.sourceforge.net/project/openbabel/openbabel/2.3.2/openbabel-2.3.2.tar.gz
 tar xvfz ob.tgz
 mkdir build
 cd build
